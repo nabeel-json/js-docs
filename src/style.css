@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+  --clr-60: rgb(30, 29, 28);
+  --clr-10: rgb(18, 247, 170);
+  --text: rgb(233, 226, 226);
+  --imp: rgb(244, 111, 9);
+}
+
+.light-mode {
+  --clr-60: rgb(241, 236, 224);
+  --clr-10: rgb(18, 247, 170);
+  --text: rgb(42, 38, 38);
+  --imp: rgb(232, 6, 67);
+}
+
+span {
+  color: var(--imp);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--text);
+}
+
+body {
+  background-color: var(--clr-60);
+  font-family: "Roboto Mono", sans-serif;
+}
+
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 30px;
+  flex-direction: column;
+  text-align: left;
+}
+
+img.js-svg {
+  width: 60px;
+}
+
+h1.javascript {
+  font-size: 60px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+article.topic {
+  width: min(800px, 90%);
+}
+
+h2 {
+  color: #4169e1;
+  font-size: 26px;
+}
+
+p.topic-content {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-left: 30px;
+  line-height: 30px;
+  text-transform: lowercase;
+}
+
+img.sun-svg {
+  position: absolute;
+  width: 50px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  display: none;
+  transition: transform 0.3s ease;
+}
+
+img.moon-svg {
+  position: absolute;
+  width: 50px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.sun-svg:hover,
+.moon-svg:hover {
+  transform: scale(1.1);
+}
+
+@media (width < 768px) {
+  h1.javascript {
+    font-size: 40px;
+  }
+}
