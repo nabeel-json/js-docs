@@ -7,6 +7,12 @@
     <title>JavaScript Docs</title>
     <link rel="stylesheet" href="./src/style.css" />
     <script defer src="./src/script.js"></script>
+    <!-- syntax highlight -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/themes/prism.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.28.0/prism.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -37,9 +43,15 @@
           <span>javascript</span> are the same concept as variables in algebra,
           i.e they store a value. <br /><br />
           in javascript, variables can be declared using three different
-          keywords, const, var and let. <br /><br />
-          dsakdalk
+          keywords, const, var and let. For example:<br /><br />
         </p>
+          <div class="code-container">
+            <pre><code class="language-javascript">
+                const a = "Hello";
+                var b = 7;
+                let c = [1, "apple", 34];
+                </code></pre>
+          </div>
       </article>
       <!-- variables end -->
     </div>

@@ -90,6 +90,35 @@ img.moon-svg {
   transform: scale(1.1);
 }
 
+/* Make sure the container is responsive */
+.code-container {
+  width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Style the pre element */
+pre {
+  margin: 0 !important;
+  width: 100% ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem !important;
+  background-color: #f5f5f5 !important;
+  border-radius: 8px !important;
+}
+
+/* Style the code element */
+code {
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block !important;
+}
+
 @media (width < 768px) {
   h1.javascript {
     font-size: 40px;
